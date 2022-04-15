@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,200&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  z-index: 0;
+  background-image: url("./img/Sprinkle.svg");
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+$bg: white;
+$text-color: #e6e6e6;
+$text-length: 50;
+$animation-time: 4s;
+// Basic style
+h1 {
+  font-family: "Inconsolata", Consolas, monospace;
+  font-size: 1em;
+  width: 100%;
+  color: $text-color;
+}
+// Typing style
+.typing {
+  position: relative;
+  &::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    width: 100%;
+    color: black;
+    background: $bg;
+    animation: typing $animation-time steps($text-length) forwards,
+      caret 1s infinite;
+  }
+  content: "";
+}
+// Animation
+@keyframes typing {
+  to {
+    width: 0;
+  }
+}
+@keyframes caret {
+  50% {
+    color: transparent;
+  }
+}
+
+.about-card {
+  @apply flex md:text-base text-xs border-2 justify-center hover:border-gray-600 w-1/2 my-8 self-center opacity-95 h-96 m-2 bg-white shadow-2xl duration-500 hover:shadow-xl items-center flex-col rounded-xl;
+}
+
+.experience-card {
+  @apply flex w-96 opacity-95 h-80 m-2 p-4 bg-white shadow-2xl duration-500 hover:shadow-xl hover:border-gray-600 border-2 space-y-4 items-center flex-col rounded-xl;
+}
+.input-form {
+  @apply block
+      w-full
+      px-3
+      py-1.5
+      text-base
+      font-normal
+      text-gray-700
+      bg-white bg-clip-padding
+      border border-solid border-gray-300
+      rounded
+      transition
+      ease-in-out
+      m-0
+      focus:text-gray-700 focus:shadow-lg shadow-md duration-500 focus:bg-white focus:border-gray-600 focus:outline-none;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  font-size: 25px;
+  cursor: pointer;
+  border-radius: 100px;
+  border: none;
+  box-shadow: 0 5px 10px #ccc;
+}
+.choujai {
+  font-family: "Source Code Pro", monospace;
+}
+
+.btn2 span:first-child {
+  transform: translateX(-101%);
+  transition: transform 0.3s ease-in;
+}
+.btn2:hover span {
+  transform: translateX(0);
+}
