@@ -6,14 +6,16 @@ import { ErrorPage } from "./components/ErrorPage";
 
 function App() {
   return (
-    <div className="w-screen h-screen">
+    <div>
       <Navbar />
-      <div className="flex justify-center">
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="contact-me" element={<Contact />} />
-          <Route exact path="*" element={<ErrorPage />} />
-        </Routes>
+      <div className="w-screen h-screen">
+        <div className="flex justify-center">
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="contact-me" element={<Contact />} />
+            <Route exact path="*" element={<ErrorPage />} />
+          </Routes>
+        </div>
       </div>
     </div>
   );
