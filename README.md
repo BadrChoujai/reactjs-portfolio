@@ -1,8 +1,12 @@
-# Getting Started with Create React App
+# A Simple Portfolio created by ReactJs and Tailwind
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
+
+Before you start the project, you should run:
+
+### `npm install --save`
 
 In the project directory, you can run:
 
