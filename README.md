@@ -1,4 +1,4 @@
-# A Simple Portfolio created by ReactJs and Tailwind
+# A Simple Portfolio created with ReactJs and Tailwind
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
