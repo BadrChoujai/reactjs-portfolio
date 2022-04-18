@@ -1,9 +1,8 @@
-// import { useEffect, useState } from "react";
-import { FiGithub } from "react-icons/fi";
 import { FaGithub, FaLinkedin, FaStackOverflow } from "react-icons/fa";
 import ReactTooltip from "react-tooltip";
 import { useEffect, useState } from "react";
 import img from "../img/home-bg.svg";
+import { Footer } from "./Footer";
 
 export const Home = () => {
   const [showButton, setShowButton] = useState(false);
@@ -208,21 +207,7 @@ export const Home = () => {
           </div>
         </div>
       </section>
-      <footer className="flex flex-wrap justify-between opacity-90 bg-gray-900 p-2 border-t-2 flex-row text-white w-full">
-        <div>
-          <p className="bg-gray-900">Copyright 2022</p>
-        </div>
-        <div>
-          <a
-            className="bg-gray-900 flex items-center flex-row hover:underline decoration-dashed"
-            href="https://github.com/BadrChoujai"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <FiGithub className="mx-1" /> CHOUJAI
-          </a>
-        </div>
-      </footer>
+      <Footer />
       {showButton && (
         <button onClick={scrollToTop} className="back-to-top">
           <lord-icon
