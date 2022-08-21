@@ -83,7 +83,7 @@ export const Contact = () => {
                         style={{ width: "40px", height: "40px" }}
                       ></lord-icon>
                       <h1 className="px-2 text-gray-900 text-sm">
-                        +212 762957715
+                        +212 708286926
                       </h1>
                     </div>
                   </div>
