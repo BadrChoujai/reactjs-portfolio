@@ -76,6 +76,7 @@ export const InputForm = () => {
       <form
         onSubmit={onSubmit}
         className="flex justify-center items-center flex-col space-y-6"
+        netlify
       >
         <div className="flex flex-row p-2 space-x-4">
           <div className="form-floating mb-3 xl:w-64">
