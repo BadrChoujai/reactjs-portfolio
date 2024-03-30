@@ -4,7 +4,7 @@ import { Home } from "./components/Home";
 function App() {
   return (
     <div>
-      <div className="w-screen h-screen">
+      <div className="w-full h-screen">
         <div className="flex justify-center">
           <Routes>
             <Route exact path="/" element={<Home />} />
